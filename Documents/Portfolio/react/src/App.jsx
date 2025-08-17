@@ -264,7 +264,7 @@ function App() {
       description: "A personal portfolio website showcasing my skills, projects, and contact information.",
       image: "https://ssl.sitew.org/images/blog/articles/cover/figma-creer-portfolio.png",
       tech: ["React", "Tailwind CSS", "JavaScript"],
-      github: "",
+      github: "https://github.com/IYuels/portfolio",
       live: "https://iyuels.github.io/Portfolio/"
     },
   ];
@@ -288,7 +288,7 @@ function App() {
       <nav className="fixed top-0 w-full bg-black/20 backdrop-blur-lg border-b border-white/10 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
-            <div className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+            <div className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent animate-pulse">
               Portfolio
             </div>
             
@@ -342,7 +342,9 @@ function App() {
                 <img src={image1} alt="Profile" className="w-full h-full rounded-full object-cover" />
               </div>
             </div>
-            <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 opacity-10 animate-spin"></div>
+            <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 opacity-5 animate-spin"></div>
+            <div className="absolute inset-1 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 opacity-5 animate-spin"></div>
+
           </div>
           
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
@@ -394,14 +396,11 @@ function App() {
               </p>
               
               <div className="flex space-x-4">
-                <a href="#" className="text-white/60 hover:text-white transition-colors">
+                <a href="https://github.com/IYuels" className="text-white/60 hover:text-white transition-colors">
                   <Github size={24} />
                 </a>
-                <a href="#" className="text-white/60 hover:text-white transition-colors">
+                <a href="https://www.linkedin.com/in/jules-ramos-b38952278/" className="text-white/60 hover:text-white transition-colors">
                   <Linkedin size={24} />
-                </a>
-                <a href="#" className="text-white/60 hover:text-white transition-colors">
-                  <Mail size={24} />
                 </a>
               </div>
             </div>
@@ -543,13 +542,17 @@ function App() {
             <div className="p-6 bg-white/5 rounded-xl border border-white/10">
               <Github className="w-8 h-8 text-blue-400 mx-auto mb-4" />
               <h3 className="text-lg font-semibold text-white mb-2">GitHub</h3>
-              <p className="text-white/70">IYuels</p>
+              <a href="https://github.com/IYuels" className="text-white/60 hover:text-white transition-colors">
+                IYuels
+                </a>
             </div>
             
             <div className="p-6 bg-white/5 rounded-xl border border-white/10">
               <Linkedin className="w-8 h-8 text-blue-400 mx-auto mb-4" />
               <h3 className="text-lg font-semibold text-white mb-2">LinkedIn</h3>
-              <p className="text-white/70">Jules Ramos</p>
+              <a href="https://www.linkedin.com/in/jules-ramos-b38952278/" className="text-white/60 hover:text-white transition-colors">
+                Jules Ramos
+                </a>
             </div>
           </div>
           
